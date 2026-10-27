@@ -1,9 +1,9 @@
 # Areas that need the owner's review (auth, access rules, grading, payments).
-# Replace @OWNER with your GitHub username, then turn on
+# Replace @Ali-Taherii with your GitHub username, then turn on
 # "Require review from Code Owners" in the main branch protection rule.
 
-/supabase/migrations/   @OWNER
-/src/lib/auth/          @OWNER
-/src/lib/grading/       @OWNER
-/src/lib/payments/      @OWNER
-/src/proxy.ts           @OWNER
+/supabase/migrations/   @Ali-Taherii
+/src/lib/auth/          @Ali-Taherii
+/src/lib/grading/       @Ali-Taherii
+/src/lib/payments/      @Ali-Taherii
+/src/proxy.ts           @Ali-Taherii
