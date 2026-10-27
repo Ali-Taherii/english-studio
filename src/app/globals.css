@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* English Studio design tokens: https://claude.ai/artifact/1pcRvocsCVqbCbj7dntbay
+   Keep in sync with the design system's tokens.json. */
+@theme {
+  --color-surface-0: #ffffff;
+  --color-surface-100: #fbf7f0;
+  --color-surface-200: #f1eadf;
+  --color-border: #dcd3c5;
+  --color-ink: #1f2a2e;
+  --color-ink-muted: #5a6468;
+  --color-brand: #1e5b52;
+  --color-brand-tint: #e4efec;
+  --color-accent: #c2502f;
+  --color-highlight: #f2c14e;
+  --color-success: #2f7d4f;
+  --color-danger: #b3261e;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+}
+
+@theme inline {
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-fa: var(--font-vazirmatn), Tahoma, sans-serif;
+}
+
+/* Headings: Fraunces in English, Vazirmatn in Persian (Fraunces has no Persian letters).
+   Not inline, so the rtl override below reaches the font-display utility. */
+@theme {
+  --font-display: var(--font-fraunces), Georgia, serif;
+}
+
+[dir="rtl"] {
+  --font-display: var(--font-vazirmatn), Tahoma, sans-serif;
+}
+
+body {
+  background: var(--color-surface-100);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-fa);
+  line-height: 1.75;
+}

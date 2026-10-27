@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "English Studio | English lessons",
+    "description": "Private and group English lessons online, with a free level test."
+  },
+  "nav": {
+    "about": "About me",
+    "packages": "Packages",
+    "test": "Level test",
+    "contact": "Contact",
+    "login": "Student login",
+    "switchTo": "فارسی"
+  },
+  "home": {
+    "badge": "Private & group lessons online",
+    "title": "Speak English with confidence",
+    "lead": "Lessons built around your goal: conversation, IELTS, business English or starting from zero.",
+    "ctaTest": "Free level test",
+    "ctaPackages": "See packages"
+  }
+}
