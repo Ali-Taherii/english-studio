@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, Vazirmatn } from "next/font/google";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
+import { site } from "@/config/site";
 import { dir, locales } from "@/i18n/config";
 import { getDictionary, getLocale } from "@/i18n/dictionaries";
 import "../globals.css";
@@ -15,7 +18,8 @@ export function generateStaticParams() {
 export async function generateMetadata(): Promise<Metadata> {
   const { meta } = await getDictionary();
   return {
-    title: meta.title,
+    metadataBase: new URL(site.url),
+    title: { default: meta.title, template: `%s | ${site.name}` },
     description: meta.description,
     alternates: { languages: { fa: "/fa", en: "/en" } },
   };
@@ -23,13 +27,18 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
   const locale = await getLocale();
+  const t = await getDictionary();
   return (
     <html
       lang={locale}
       dir={dir[locale]}
       className={`${fraunces.variable} ${inter.variable} ${vazirmatn.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <SiteHeader locale={locale} t={t.nav} />
+        <main className="flex flex-1 flex-col">{children}</main>
+        <SiteFooter locale={locale} t={t.nav} />
+      </body>
     </html>
   );
 }

@@ -4,6 +4,7 @@
     "description": "Private and group English lessons online, with a free level test."
   },
   "nav": {
+    "label": "Main menu",
     "about": "About me",
     "packages": "Packages",
     "test": "Level test",
@@ -14,8 +15,100 @@
   "home": {
     "badge": "Private & group lessons online",
     "title": "Speak English with confidence",
-    "lead": "Lessons built around your goal: conversation, IELTS, business English or starting from zero.",
+    "lead": "Lessons built around your goal: conversation, IELTS, business English or starting from zero. With weekly homework, careful feedback and progress you can see.",
     "ctaTest": "Free level test",
-    "ctaPackages": "See packages"
+    "ctaPackages": "See packages",
+    "heroNote": "15 minutes · no sign-up · instant result",
+    "photoPlaceholder": "[Your photo]",
+    "levels": "From beginner to advanced, on the European CEFR scale",
+    "aboutLink": "More about me"
+  },
+  "about": {
+    "metaTitle": "About me",
+    "eyebrow": "About me",
+    "title": "Hi, I'm Ali Taheri",
+    "bio": "[A few sentences about you: how long you have taught, your qualifications, and what your lessons feel like.]",
+    "mediaPlaceholder": "[Photo or intro video]",
+    "features": [
+      { "title": "Interactive lessons", "text": "Most of the lesson, you are the one talking." },
+      { "title": "Homework and feedback", "text": "Online homework after every lesson, with personal feedback." },
+      { "title": "Progress you can see", "text": "Your scores and attendance, in your own panel." }
+    ],
+    "qualificationsTitle": "Qualifications",
+    "qualifications": ["[Qualification or certificate 1]", "[Qualification or certificate 2]", "[Years of teaching experience]"],
+    "styleTitle": "How I teach",
+    "style": "[A short paragraph on your teaching style: how a typical lesson runs, how you correct mistakes, what you expect between lessons.]"
+  },
+  "how": {
+    "title": "Where do I start?",
+    "steps": [
+      { "title": "Free test", "text": "Find your level in 15 minutes." },
+      { "title": "A short call", "text": "We talk about your goal and your schedule." },
+      { "title": "Pick a package", "text": "Private or group, with the number of lessons you want." },
+      { "title": "Start lessons", "text": "Your class link and homework, in your panel." }
+    ]
+  },
+  "packages": {
+    "metaTitle": "Packages",
+    "title": "Packages",
+    "lead": "All lessons are online. Unused lessons stay yours until the package expires.",
+    "popular": "Most popular",
+    "interested": "I'm interested",
+    "lessons": "{count} lessons of {minutes} minutes",
+    "validity": "Valid for {days} days",
+    "format": {
+      "group": "Group",
+      "one_to_one": "Private"
+    },
+    "priceOnRequest": "Price on request",
+    "emptyTitle": "Get in touch for pricing",
+    "emptyText": "Tell me your goal and how often you want lessons, and I will suggest a plan and a price.",
+    "emptyCta": "Send a message"
+  },
+  "testCta": {
+    "title": "What is your level?",
+    "text": "30 grammar, vocabulary and reading questions, plus a short optional writing task. You see your result straight away and get it by email.",
+    "button": "Start the free test"
+  },
+  "contact": {
+    "metaTitle": "Contact",
+    "title": "Get in touch",
+    "lead": "Send me a message; I usually reply within 24 hours.",
+    "channels": {
+      "telegram": "Telegram",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "email": "Email"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "package": "Package you are interested in",
+      "packageNone": "Not sure yet",
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "successTitle": "Thank you, your message is on its way",
+      "successText": "I'll reply within 24 hours.",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email address.",
+        "message": "Please write a short message.",
+        "rateLimited": "You have sent several messages in a short time. Please try again in a few minutes.",
+        "generic": "The message could not be sent. Please try again, or contact me another way."
+      }
+    }
+  },
+  "emails": {
+    "leadNotification": {
+      "subject": "New message from {name}",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "package": "Interested in",
+      "message": "Message",
+      "none": "Not given"
+    }
   }
 }
