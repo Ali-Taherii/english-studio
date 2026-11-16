@@ -4,6 +4,7 @@
     "description": "Private and group English lessons online, with a free level test."
   },
   "nav": {
+    "label": "Main menu",
     "about": "About me",
     "packages": "Packages",
     "test": "Level test",
@@ -14,8 +15,221 @@
   "home": {
     "badge": "Private & group lessons online",
     "title": "Speak English with confidence",
-    "lead": "Lessons built around your goal: conversation, IELTS, business English or starting from zero.",
+    "lead": "Lessons built around your goal: conversation, IELTS, business English or starting from zero. With weekly homework, careful feedback and progress you can see.",
     "ctaTest": "Free level test",
-    "ctaPackages": "See packages"
+    "ctaPackages": "See packages",
+    "heroNote": "15 minutes · no sign-up · instant result",
+    "photoPlaceholder": "[Your photo]",
+    "levels": "From beginner to advanced, on the European CEFR scale",
+    "aboutLink": "More about me"
+  },
+  "about": {
+    "metaTitle": "About me",
+    "eyebrow": "About me",
+    "title": "Hi, I'm Ali Taheri",
+    "bio": "[A few sentences about you: how long you have taught, your qualifications, and what your lessons feel like.]",
+    "mediaPlaceholder": "[Photo or intro video]",
+    "features": [
+      {
+        "title": "Interactive lessons",
+        "text": "Most of the lesson, you are the one talking."
+      },
+      {
+        "title": "Homework and feedback",
+        "text": "Online homework after every lesson, with personal feedback."
+      },
+      {
+        "title": "Progress you can see",
+        "text": "Your scores and attendance, in your own panel."
+      }
+    ],
+    "qualificationsTitle": "Qualifications",
+    "qualifications": [
+      "[Qualification or certificate 1]",
+      "[Qualification or certificate 2]",
+      "[Years of teaching experience]"
+    ],
+    "styleTitle": "How I teach",
+    "style": "[A short paragraph on your teaching style: how a typical lesson runs, how you correct mistakes, what you expect between lessons.]"
+  },
+  "how": {
+    "title": "Where do I start?",
+    "steps": [
+      {
+        "title": "Free test",
+        "text": "Find your level in 15 minutes."
+      },
+      {
+        "title": "A short call",
+        "text": "We talk about your goal and your schedule."
+      },
+      {
+        "title": "Pick a package",
+        "text": "Private or group, with the number of lessons you want."
+      },
+      {
+        "title": "Start lessons",
+        "text": "Your class link and homework, in your panel."
+      }
+    ]
+  },
+  "packages": {
+    "metaTitle": "Packages",
+    "title": "Packages",
+    "lead": "All lessons are online. Unused lessons stay yours until the package expires.",
+    "popular": "Most popular",
+    "interested": "I'm interested",
+    "lessons": "{count} lessons of {minutes} minutes",
+    "validity": "Valid for {days} days",
+    "format": {
+      "group": "Group",
+      "one_to_one": "Private"
+    },
+    "priceOnRequest": "Price on request",
+    "emptyTitle": "Get in touch for pricing",
+    "emptyText": "Tell me your goal and how often you want lessons, and I will suggest a plan and a price.",
+    "emptyCta": "Send a message"
+  },
+  "testCta": {
+    "title": "What is your level?",
+    "text": "30 grammar, vocabulary and reading questions, plus a short optional writing task. You see your result straight away and get it by email.",
+    "button": "Start the free test"
+  },
+  "test": {
+    "metaTitle": "Free level test",
+    "title": "Find your English level",
+    "lead": "A short test that gets harder or easier as you answer. At the end you see your level on the European CEFR scale.",
+    "facts": [
+      "About 15 minutes",
+      "30 questions: grammar, vocabulary and reading",
+      "A short optional writing task",
+      "No sign-up needed"
+    ],
+    "start": "Start the test",
+    "resumeNote": "Already started? The same button takes you back to where you stopped.",
+    "errors": {
+      "rateLimited": "Too many tests were started from this connection. Please try again in an hour.",
+      "generic": "The test could not be loaded. Please try again in a moment."
+    },
+    "unavailableTitle": "The test is not ready yet",
+    "unavailableText": "Questions are still being added. Send me a message and I will help you find your level.",
+    "loading": "Loading your test…",
+    "questionOf": "Question {number} of {total}",
+    "progressLabel": "Test progress",
+    "instruction": "Choose the best answer.",
+    "skills": {
+      "grammar": "Grammar",
+      "vocabulary": "Vocabulary",
+      "reading": "Reading",
+      "listening": "Listening"
+    },
+    "next": "Next question",
+    "note": "The questions are in English and slowly get harder or easier with your answers. Your progress is saved: if you close the page, you continue from here.",
+    "writing": {
+      "title": "Optional: a short piece of writing",
+      "lead": "Writing shows things a multiple-choice test cannot. If you write a few lines, I will read them myself and send you a more exact level.",
+      "label": "Your answer, in English",
+      "save": "Continue",
+      "skip": "Skip this part"
+    },
+    "details": {
+      "title": "Almost there",
+      "lead": "Where should I send your result? You will see it on the next screen too.",
+      "name": "Name",
+      "email": "Email",
+      "submit": "See my result",
+      "sending": "Working out your level…",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email address.",
+        "rateLimited": "Too many attempts from this connection. Please try again in an hour.",
+        "generic": "Your result could not be saved. Please try again."
+      }
+    },
+    "result": {
+      "title": "Your estimated level",
+      "score": "{correct} of {total} correct",
+      "pendingWriting": "I will read your writing and email you the final level.",
+      "emailNote": "This result was also sent to your email.",
+      "ctaCall": "Book a free call",
+      "ctaPackages": "See packages",
+      "retake": "Take the test again"
+    }
+  },
+  "levels": {
+    "A1": {
+      "name": "Beginner",
+      "text": "You understand and use very basic everyday phrases, and can introduce yourself and answer simple questions."
+    },
+    "A2": {
+      "name": "Elementary",
+      "text": "You can handle short, simple exchanges about familiar things such as family, shopping and work."
+    },
+    "B1": {
+      "name": "Intermediate",
+      "text": "You can deal with most everyday situations, describe experiences and plans, and explain your opinions simply."
+    },
+    "B2": {
+      "name": "Upper intermediate",
+      "text": "You can talk and write in detail on many subjects and follow longer, more complex discussions."
+    },
+    "C1": {
+      "name": "Advanced",
+      "text": "You use English flexibly and precisely for study, work and social life, and understand demanding texts."
+    },
+    "C2": {
+      "name": "Proficient",
+      "text": "You understand almost everything you read or hear and express yourself with precision, even on complex topics."
+    }
+  },
+  "contact": {
+    "metaTitle": "Contact",
+    "title": "Get in touch",
+    "lead": "Send me a message; I usually reply within 24 hours.",
+    "channels": {
+      "telegram": "Telegram",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "email": "Email"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "package": "Package you are interested in",
+      "packageNone": "Not sure yet",
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "successTitle": "Thank you, your message is on its way",
+      "successText": "I'll reply within 24 hours.",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email address.",
+        "message": "Please write a short message.",
+        "rateLimited": "You have sent several messages in a short time. Please try again in a few minutes.",
+        "generic": "The message could not be sent. Please try again, or contact me another way."
+      }
+    }
+  },
+  "emails": {
+    "leadNotification": {
+      "subject": "New message from {name}",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "package": "Interested in",
+      "message": "Message",
+      "none": "Not given"
+    },
+    "testResult": {
+      "subject": "Your English level: {level}",
+      "intro": "Hi {name}, thank you for taking the level test. Here is your result.",
+      "level": "Estimated level",
+      "meaning": "What it means",
+      "score": "Score",
+      "writing": "Your writing",
+      "next": "Packages for your level"
+    }
   }
 }
