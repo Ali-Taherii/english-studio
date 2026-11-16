@@ -27,7 +27,15 @@ export function SiteHeader({ locale, t }: { locale: Locale; t: Dictionary["nav"]
           ))}
         </nav>
 
-        <LanguageSwitch locale={locale} label={t.switchTo} />
+        <div className="flex items-center gap-4">
+          <LanguageSwitch locale={locale} label={t.switchTo} />
+          <Link
+            href={`/${locale}/login`}
+            className="rounded-md border border-brand px-4 py-2 text-[15px] font-semibold text-brand"
+          >
+            {t.login}
+          </Link>
+        </div>
       </div>
     </header>
   );

@@ -212,6 +212,61 @@
       }
     }
   },
+  "auth": {
+    "metaTitle": "Log in",
+    "title": "Log in",
+    "lead": "For students and the teacher. New here? You get an account when you join a class.",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Log in",
+    "working": "One moment…",
+    "or": "No password yet, or forgot it?",
+    "emailLink": "Email me a login link",
+    "resetPassword": "Reset my password",
+    "linkSent": "If that email has an account, a link is on its way. It works once and expires after a short time.",
+    "errors": {
+      "invalid": "That email and password don't match. Check them and try again.",
+      "email": "Please enter a valid email address.",
+      "rateLimited": "Too many attempts. Please wait a few minutes and try again.",
+      "link": "That link has expired or was already used. Ask for a new one below.",
+      "generic": "Something went wrong. Please try again."
+    },
+    "setPassword": {
+      "metaTitle": "Set your password",
+      "title": "Set your password",
+      "lead": "Choose a password for next time. You stay logged in on this device.",
+      "password": "New password",
+      "hint": "At least 8 characters.",
+      "save": "Save password",
+      "errors": {
+        "short": "Use at least 8 characters.",
+        "generic": "The password could not be saved. Please try again."
+      }
+    },
+    "logout": "Log out"
+  },
+  "panel": {
+    "metaTitle": "Teacher panel",
+    "title": "Teacher panel",
+    "welcome": "Welcome back, {name}.",
+    "loading": "Loading…",
+    "newLeads": "New leads",
+    "testsToReview": "Tests to review",
+    "students": "Students",
+    "classes": "Active classes"
+  },
+  "dashboard": {
+    "metaTitle": "My dashboard",
+    "title": "Hello, {name}",
+    "loading": "Loading…",
+    "classesTitle": "My classes",
+    "noClasses": "You are not in a class yet. Your teacher will add you soon.",
+    "joinLesson": "Open class link",
+    "format": {
+      "group": "Group",
+      "one_to_one": "Private"
+    }
+  },
   "emails": {
     "leadNotification": {
       "subject": "New message from {name}",
@@ -230,6 +285,25 @@
       "score": "Score",
       "writing": "Your writing",
       "next": "Packages for your level"
+    },
+    "authLink": {
+      "invite": {
+        "subject": "Your English Studio account",
+        "intro": "Your teacher has opened an account for you. Use the button below to log in and choose a password.",
+        "button": "Open my account"
+      },
+      "magiclink": {
+        "subject": "Your login link",
+        "intro": "Use the button below to log in to English Studio.",
+        "button": "Log in"
+      },
+      "recovery": {
+        "subject": "Reset your password",
+        "intro": "Use the button below to log in and choose a new password.",
+        "button": "Choose a new password"
+      },
+      "noteLabel": "Good to know",
+      "note": "The link works once and expires after a short time. If you did not ask for it, you can ignore this email."
     }
   }
 }
