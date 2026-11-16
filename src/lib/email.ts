@@ -9,6 +9,8 @@ export const escapeHtml = (value: string) =>
 type Email = {
   to: string;
   subject: string;
+  // Optional opening line above the rows. Escaped here.
+  intro?: string;
   // Label/value rows; values are escaped here, so pass them raw.
   rows: { label: string; value: string }[];
   locale: Locale;
@@ -19,14 +21,15 @@ type Email = {
   dedupeKey?: string;
 };
 
-function render({ rows, locale }: Pick<Email, "rows" | "locale">) {
+function render({ intro, rows, locale }: Pick<Email, "intro" | "rows" | "locale">) {
+  const opening = intro ? `<p dir="auto" style="margin:0 0 16px">${escapeHtml(intro)}</p>` : "";
   const body = rows
     .map(
       ({ label, value }) =>
         `<p style="margin:0 0 12px"><strong>${escapeHtml(label)}</strong><br><span dir="auto" style="white-space:pre-wrap">${escapeHtml(value)}</span></p>`,
     )
     .join("");
-  return `<div lang="${locale}" dir="${dir[locale]}" style="font-family:Tahoma,Arial,sans-serif;font-size:15px;line-height:1.7;color:#1f2a2e">${body}</div>`;
+  return `<div lang="${locale}" dir="${dir[locale]}" style="font-family:Tahoma,Arial,sans-serif;font-size:15px;line-height:1.7;color:#1f2a2e">${opening}${body}</div>`;
 }
 
 // Returns false when email isn't configured or the send fails; callers decide whether that matters.

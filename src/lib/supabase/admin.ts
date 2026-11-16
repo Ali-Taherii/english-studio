@@ -8,6 +8,15 @@
 
 type Query = Record<string, string>;
 
+export class SupabaseError extends Error {
+  constructor(
+    message: string,
+    readonly status: number,
+  ) {
+    super(message);
+  }
+}
+
 function config() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -17,7 +26,7 @@ function config() {
 
 export const isSupabaseConfigured = () => config() !== null;
 
-async function request<T>(method: "GET" | "POST", table: string, query: Query, body?: unknown): Promise<T[]> {
+async function request<T>(method: "GET" | "POST" | "PATCH", table: string, query: Query, body?: unknown): Promise<T[]> {
   const cfg = config();
   if (!cfg) throw new Error("Supabase is not configured: set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY");
 
@@ -28,14 +37,17 @@ async function request<T>(method: "GET" | "POST", table: string, query: Query, b
       apikey: cfg.key,
       Authorization: `Bearer ${cfg.key}`,
       "Content-Type": "application/json",
-      ...(method === "POST" ? { Prefer: "return=representation" } : {}),
+      ...(method === "GET" ? {} : { Prefer: "return=representation" }),
     },
     body: body === undefined ? undefined : JSON.stringify(body),
     cache: "no-store",
   });
 
   if (!response.ok) {
-    throw new Error(`Supabase ${method} ${table} failed: ${response.status} ${await response.text()}`);
+    throw new SupabaseError(
+      `Supabase ${method} ${table} failed: ${response.status} ${await response.text()}`,
+      response.status,
+    );
   }
   return (await response.json()) as T[];
 }
@@ -47,3 +59,7 @@ export const adminInsert = async <T>(table: string, row: Record<string, unknown>
   const rows = await request<T>("POST", table, { select }, row);
   return rows[0];
 };
+
+// filter uses the same PostgREST syntax as adminSelect: { id: "eq.<uuid>" }. Returns the updated rows.
+export const adminUpdate = <T>(table: string, filter: Query, patch: Record<string, unknown>, select = "*") =>
+  request<T>("PATCH", table, { ...filter, select }, patch);
